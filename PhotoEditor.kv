@@ -1,0 +1,31 @@
+Display
+<Display>:
+    BoxLayout:
+        orientation: "vertical"
+        GridLayout:
+            cols: 2
+            size_hint: 1,0.3
+            spacing: 1
+            TextInput:
+                id: ans
+                text: ""
+
+            Button:
+                text: "load Image"
+                on_press: root.display_image()
+            Button:
+                text: "green to blue"
+            Button:
+                text: "flip_x"
+            Button:
+                text: "pixelate"
+            Button:
+                text: "black and white"
+            Button:
+                text: "sepia"
+            Button:
+                text: "invert"
+        Image:
+            id: IMG
+            source: ""
+
