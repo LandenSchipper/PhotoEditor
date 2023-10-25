@@ -14,19 +14,24 @@ Display
                 text: "load Image"
                 on_press: root.display_image()
             Button:
-                text: "green to blue"
+                text: "blue to green"
+                on_press: root.blue_to_green()
             Button:
                 text: "pointillism"
-                on_press: root.apply_point()
+                on_press: root.pointillism()
             Button:
                 text: "pixelate"
+                on_press: root.pixelate()
             Button:
-                text: "black and white"
+                text: "red"
+                on_press: root.red_filter()
             Button:
                 text: "sepia"
+                on_press: root.sepia()
             Button:
                 text: "invert"
+                on_press: root.invert()
         Image:
             id: IMG
-            source: ""
+            source: root.loadImage()
 
